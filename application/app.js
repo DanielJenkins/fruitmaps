@@ -2,13 +2,22 @@ var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
 var jsonParser = bodyParser.json();
+var mongoose = require('mongoose');
 var Owner = require('./private/models/ownerModel.js');
 var Harvester = require('./private/models/harvesterModel.js');
 var Tree = require('./private/models/treeModel.js');
+var db = require('./private/config.js');
+
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.static('application/public'));
+
+mongoose.connect(db.db, function(err) {
+  if (err) throw err;
+  console.log('connected!');
+});
 
 app.get('/', function (req, res) {
-  res.sendFile( __dirname + '/index.html')
+  res.sendFile( __dirname + '/public/html/index.html')
 })
 
 app.get('/trees', function(req, res) {
@@ -34,3 +43,8 @@ app.post('/search', jsonParser, function(req, res) {
 });
 
 require('./private/config.js');
+
+var port = process.env.PORT || 3000;
+app.listen(port, function() {
+  console.log('App is running, get some fruit!');
+});
