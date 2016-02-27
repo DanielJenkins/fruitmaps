@@ -1,0 +1,19 @@
+{
+  "name": "fruitmaps",
+  "version": "1.0.0",
+  "description": "It's a sourcing tool for people to find fruit trees in their area",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielJenkins/fruitmaps.git"
+  },
+  "author": "Daniel Jenkins, Jordan Chan, Stella Liu, Merry Watanasrimongkol",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanielJenkins/fruitmaps/issues"
+  },
+  "homepage": "https://github.com/DanielJenkins/fruitmaps#readme"
+}
