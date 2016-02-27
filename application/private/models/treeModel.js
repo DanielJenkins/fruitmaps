@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-vas Schema = mongoose.Schema;
+var Schema = mongoose.Schema;
 
 var treeSchema = new Schema({
   name: {type: String, required: true},
