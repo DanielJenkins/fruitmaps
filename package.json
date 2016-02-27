@@ -15,5 +15,15 @@
   "bugs": {
     "url": "https://github.com/DanielJenkins/fruitmaps/issues"
   },
-  "homepage": "https://github.com/DanielJenkins/fruitmaps#readme"
+  "homepage": "https://github.com/DanielJenkins/fruitmaps#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-nodemon": "^2.0.6",
+    "gulp-sass": "^2.2.0"
+  },
+  "dependencies": {
+    "express": "^4.13.4",
+    "mongoose": "^4.4.5"
+  }
 }
