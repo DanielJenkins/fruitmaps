@@ -27,15 +27,23 @@ app.post('/newTree', function(req, res) {
   var flavor = req.body.treeFlavor;
   console.log(flavor);
 
-  new Tree({
-    name: name,
-    location: location,
-    treeFlavor: treeFlavor,
-    treeComment: treeComment,
-    contactName: contactName,
-    contactNumber: contactNumber,
-    status: status
-  });
+  // new Tree({
+  //   name: name,
+  //   location: location,
+  //   treeFlavor: treeFlavor,
+  //   treeComment: treeComment,
+  //   contactName: contactName,
+  //   contactNumber: contactNumber,
+  //   status: status
+  // }).save(function(err,doc) {
+  //   if(err) {
+  //     res.json(err);
+  //   }
+  //   else {
+  //     console.log('marking');
+  //     res.redirect('/results');
+  //   }
+  // });
 });
 
 app.get('/trees', function(req, res) {

@@ -5,9 +5,6 @@ app.config(['$routeProvider', function($routeProvider) {
     .when("/", {
       templateUrl: "../html/welcome.html"
     })
-    .when("/search", {
-      templateUrl: "../html/search.html"
-    })
     .when("/results", {
       templateUrl: "../html/results.html"
     })

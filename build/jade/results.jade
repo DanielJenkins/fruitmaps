@@ -1,7 +1,47 @@
 a(href="/#/") Home
-a(href="/#/search") Perform a New Search
 
 p this is the searchresults page
 
 a(href="/#/tree") A Tree <br>
 a(href="/#/tree") A different tree
+
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+h1 this is the search page
+
+form
+  div(class="form-group")
+    label(for="origin") Where are you looking?:
+    input(type="text" size="50" class="form-control text-center" id="origin" placeholder="Irvine, CA")
+  label Type of Fruit?
+  div(class="form-group")
+    div(class="checkbox")
+      label
+        <input type="checkbox" value="apple"> Apples
+    div(class="checkbox")
+      label
+        <input type="checkbox" value="lemon"> Lemons
+    div(class="checkbox")
+      label
+        <input type="checkbox" value="orange"> Oranges/Tangerines
+    div(class="checkbox")
+      label
+        <input type="checkbox" value="pomegranate"> Pomegranates
+    div(class="checkbox")
+      label
+        <input type="checkbox" value=""> Other
+  button(type="submit" class="btn btn-default") Search
+
+p delete me later
