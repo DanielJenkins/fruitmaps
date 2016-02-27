@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/DanielJenkins/fruitmaps/issues"
   },
-  "homepage": "https://github.com/DanielJenkins/fruitmaps#readme"
+  "homepage": "https://github.com/DanielJenkins/fruitmaps#readme",
+  "dependencies": {
+    "mongoose": "^4.4.5"
+  }
 }

@@ -1,9 +1,13 @@
 var mongoose = require('mongoose');
 vas Schema = mongoose.Schema;
 
-var ownerSchema = new Schema({
+var treeSchema = new Schema({
   name: {type: String, required: true},
-  address: {type: String},
+  address: {type: String, required: true},
+  contactName: {type: String, required: true},
+  contactNumber: {type: String, required: true},
   status: {type: Number}, //0 = empty, 1 = on the way, 2 = full
-  dateCreated: {type: Date, required: true}
 });
+var trees = mongoose.model('trees', treeSchema);
+
+module.exports = trees;

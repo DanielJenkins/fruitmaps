@@ -6,3 +6,6 @@ var harvesterSchema = new Schema({
   organizaiton: {type: String},
   dateCreated: {type: Date, required: true}
 });
+var harvesters = mongoose.model('harvesters', harvesterSchema);
+
+module.exports = harvesters;
