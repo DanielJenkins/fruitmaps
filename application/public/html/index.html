@@ -1,13 +1,20 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" ng-app="all">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fruit Maps</title>
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.js"></script>
+  <script src="../js/angular.js"></script>
   <link rel="stylesheet" href="./../css/default.css">
 </head>
 <body>
-  <h2>HELLO! PLZ PUT ANGULAR HERE DERP</h2>
+  <div> ng-controller="mainController as main"
+    <h2>index</h2>
+    <div ng-view>
+    </div>
+  </div>
 </body>
 </html>
