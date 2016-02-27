@@ -1,1 +1,30 @@
+a(href="/#/") Home
 p this is the editTree page
+
+form
+  label Type of Fruit?
+  div(class="form-group")
+    div(class="radio")
+      label
+        <input type="radio" value="apple"> Apples
+    div(class="radio")
+      label
+        <input type="radio" value="lemon"> Lemons
+    div(class="radio")
+      label
+        <input type="radio" value="orange"> Oranges/Tangerines
+    div(class="radio")
+      label
+        <input type="radio" value="pomegranate"> Pomegranates
+    div(class="radio")
+      label
+        <input type="radio" value=""> Other
+  div(class="form-group")
+    label(for="location") What is this tree's address?:
+    input(type="text" size="50" class="form-control text-center" id="location" placeholder="123 Sesame St New York, NY")
+  div(class="form-group")
+    label(for="comment") Comment:
+    textarea(class="form-control" rows="5" id="comment" placeholder="Is this tree hard to find? Any special instructions?")
+  button(type="submit" class="btn btn-default") Submit
+
+a(href="/#/search") search
