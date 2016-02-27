@@ -16,11 +16,13 @@ mongoose.connect(db.db, function(err) {
   console.log('connected!');
 });
 
-app.use(express.static('./application/public'))
+app.use(express.static('./application/public'));
 
 app.get('/', function (req, res) {
-  res.sendFile( __dirname + '/public/html/index.html')
+  res.sendFile( __dirname + '/public/html/index.html');
 })
+
+app.get('/')
 
 app.get('/trees', function(req, res) {
   Post.find(function(err, trees) {
