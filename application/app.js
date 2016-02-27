@@ -22,28 +22,29 @@ app.get('/', function (req, res) {
   res.sendFile( __dirname + '/public/html/index.html');
 });
 
+
 app.post('/newTree', function(req, res) {
   console.log('posting a tree');
-  var flavor = req.body.treeFlavor;
-  console.log(flavor);
+  var location = req.body.location;
+  console.log(location);
 
-  // new Tree({
-  //   name: name,
-  //   location: location,
-  //   treeFlavor: treeFlavor,
-  //   treeComment: treeComment,
-  //   contactName: contactName,
-  //   contactNumber: contactNumber,
-  //   status: status
-  // }).save(function(err,doc) {
-  //   if(err) {
-  //     res.json(err);
-  //   }
-  //   else {
-  //     console.log('marking');
-  //     res.redirect('/results');
-  //   }
-  // });
+  new Tree({
+    treeName: req.body.treeName,
+    location: location,
+    treeFlavor: req.body.treeFlavor,
+    treeComment: req.body.treeComment,
+    contactName: req.body.contactName,
+    contactNumber: req.body.contactNumber,
+    status: req.body.status
+  }).save(function(err,doc) {
+    if(err) {
+      res.json(err);
+    }
+    else {
+      console.log('marking');
+      res.redirect('/#/results');
+    }
+  });
 });
 
 app.get('/trees', function(req, res) {

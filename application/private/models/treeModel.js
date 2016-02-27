@@ -2,7 +2,7 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var treeSchema = new Schema({
-  name: {type: String},
+  treeName: {type: String},
   treeLocation: {type: String},
   treeFlavor: {type: String},
   treeComment: {type: String},
