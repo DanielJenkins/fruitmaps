@@ -29,7 +29,7 @@ app.post('/newTree', function(req, res) {
 
   new Tree({
     name: name,
-    treeLocation: treeLocation,
+    location: location,
     treeFlavor: treeFlavor,
     treeComment: treeComment,
     contactName: contactName,

@@ -3,6 +3,8 @@ var autocomplete;
 
 google.maps.event.addDomListener(window, 'load', loadGoogleStuff);
 
+var placeSearch, autocomplete;
+
 function loadGoogleStuff() {
   initAutocomplete();
 }
