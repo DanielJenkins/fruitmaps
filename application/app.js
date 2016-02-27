@@ -20,9 +20,23 @@ app.use(express.static('./application/public'));
 
 app.get('/', function (req, res) {
   res.sendFile( __dirname + '/public/html/index.html');
-})
+});
 
-app.get('/')
+app.post('/newTree', function(req, res) {
+  console.log('posting a tree');
+  var flavor = req.body.treeFlavor;
+  console.log(flavor);
+
+  new Tree({
+    name: name,
+    treeLocation: treeLocation,
+    treeFlavor: treeFlavor,
+    treeComment: treeComment,
+    contactName: contactName,
+    contactNumber: contactNumber,
+    status: status
+  });
+});
 
 app.get('/trees', function(req, res) {
   Post.find(function(err, trees) {
