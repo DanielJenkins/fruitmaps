@@ -19,81 +19,11 @@ a(href="/#/") Home
 </section>
 <!-- /.row -->
 
-<!-- Page Features -->
-<div class="row text-center">
 
-<div class="col-md-3 col-sm-6 hero-feature">
-<div class="thumbnail">
-<img src="http://citruspages.free.fr/images/starruby2-jk.jpg" alt="">
-<div class="caption" color ="white">
-<h3>TYPE OF TREE</h3>
-<br>
-<h4> When can you meet the volunteers?</h4><br><br>
-<p>
-<a href="#" class="btn btn-primary">Post!</a> <a href="#" class="btn btn-default">Contact Information</a>
-</p>
-</div>
-</div>
-</div>
 
-<div class="col-md-3 col-sm-6 hero-feature">
-<div class="thumbnail">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Ronda_08_Orange_Tree_(4579322771).jpg/1024px-Ronda_08_Orange_Tree_(4579322771).jpg" alt="">
-<div class="caption" color ="white">
-<h3>TYPE OF TREE</h3>
-<br>
-<h4> When can you meet the volunteers?</h4><br><br>
-<p>
-<a href="#" class="btn btn-primary">Post!</a> <a href="#" class="btn btn-default">Contact Information</a>
-</p>
-</div>
-</div>
-</div>
 
-<div class="col-md-3 col-sm-6 hero-feature">
-<div class="thumbnail">
-<img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Strawberry_Tree_fruit_1.jpg" alt="">
-<div class="caption" color ="white">
-<h3>TYPE OF TREE</h3>
-<br>
-<h4> When can you meet the volunteers?</h4><br><br>
-<p>
-<a href="#" class="btn btn-primary">Post!</a> <a href="#" class="btn btn-default">Contact Information</a>
-</p>
-</div>
-</div>
-</div>
 
-<div class="col-md-3 col-sm-6 hero-feature">
-<div class="thumbnail">
-<img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Pear-tree,katori-city,japan.JPG" alt="">
-<div class="caption" color ="white">
-<h3>TYPE OF TREE</h3>
-<br>
-<h4> When can you meet the volunteers?</h4><br><br>
-<p>
-<a href="#" class="btn btn-primary">Post!</a> <a href="#" class="btn btn-default">Contact Information</a>
-</p>
-</div>
-</div>
-
-</div>
-<!-- /.row -->
-
-<hr>
-
-<!-- Footer -->
-<footer>
-<div class="row">
-<div class="col-lg-12">
-<p>Copyright &copy; Fruit Maps 2016</p>
-</div>
-</div>
-</footer>
-
-</div>
-
-form(action="/newTree" method="POST")
+form(action="/newTree" method="POST" class="text-left")
   div(class="form-group")
     label(for="treeName") Create a Name for This Tree:
     input(type="text" size="50" class="form-control" id="treeName" placeholder="Easy-to-Reach Orange Tree" name="treeName")
@@ -145,10 +75,17 @@ form(action="/newTree" method="POST")
     textarea(class="form-control" rows="5" id="comment" placeholder="Is this tree hard to find? Any special instructions?" name="treeComment")
   button(type="submit" class="btn btn-default") Submit
 
-a(href="/#/search") search
 
+<!-- Footer -->
+<footer>
+<div class="row">
+<div class="col-lg-12">
+<p>Copyright &copy; Fruit Maps 2016</p>
+</div>
+</div>
+</footer>
 
-
+</div>
 
 
 

@@ -1,7 +1,14 @@
-<div ng-controller="mainController as main"><a href="/#/">Home</a><h1>Search Bar</h1><form><div class="form-group"><label for="origin">Where are you looking?:</label><input type="text" size="50" id="origin" placeholder="Irvine, CA" class="form-control text-center"/></div><label>Type of Fruit?</label><div class="form-group"><div class="checkbox"><label><input type="checkbox" value="apple"> Apples</label></div><div class="checkbox"><label><input type="checkbox" value="lemon"> Lemons</label></div><div class="checkbox"><label><input type="checkbox" value="orange"> Oranges/Tangerines</label></div><div class="checkbox"><label><input type="checkbox" value="pomegranate"> Pomegranates</label></div><div class="checkbox"><label><input type="checkbox" value=""> Other</label></div></div><button type="submit" class="btn btn-default">Search</button></form><br>
-<br>
-<p> -----------------------------------------------
-<br>
-<br>
-<br>
-<br><h2>search results</h2><a href="/#/tree">A Tree <br></a><a href="/#/tree">A different tree</a><div ng-repeat="tree in main.treeList"><div class="treeListing"><h4>{{tree.treeName}}</h4><p><a target="_blank" ng-href="http://maps.google.com/?q={{tree.treeLocation}}">Tree Address: {{tree.treeLocation}}</a></p><p>Tree Type: {{tree.treeFlavor}}</p><p>How's this tree looking?</p><img ng-src="../images/{{tree.status}}.jpg" class="fullnessImg"/><p>Contact Name: {{tree.contactName}}</p><p>Contact Number: {{tree.contactNumber}}</p><p>Notes about this Tree: {{tree.treeComment}}</p></div></div></div>
+<div ng-controller="mainController as main"><a href="/#/">Home</a><div ng-repeat="tree in main.treeList"><div class="row text-center">
+<div class="col-md-3 col-sm-6 hero-feature">
+<div class="thumbnail">
+<img src="http://citruspages.free.fr/images/starruby2-jk.jpg" alt="">
+<div class="caption" color ="white">
+<h3>Type of Tree: {{tree.treeFlavor}}</h3>
+<br><p>Contact Name: {{tree.contactName}}</p><p>Contact Number: {{tree.contactNumber}}</p><p>Notes about this Tree: <br> {{tree.treeComment}}</p><a target="_blank" ng-href="http://maps.google.com/?q={{tree.treeLocation}}">Tree Address: {{tree.treeLocation}}</a><p>How's this tree looking?</p><img ng-src="../images/{{tree.status}}.jpg" class="fullnessImg"/><p>
+</p>
+</div>
+</div>
+</div>
+</div>
+<!-- /.row -->
+<hr></div></div>
