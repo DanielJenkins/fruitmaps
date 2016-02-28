@@ -1,18 +1,22 @@
 var originElement = document.getElementById('origin');
 var autocomplete;
 
-google.maps.event.addDomListener(window, 'load', loadGoogleStuff);
+
 
 var placeSearch, autocomplete;
 
 function loadGoogleStuff() {
-  initAutocomplete();
+  setTimeout(mainFunction,5000);
+  function mainFunction() {
+    initAutocomplete();
+  }
 }
 
 function initAutocomplete() {
-  autocomplete = new google.maps.places.Autocomplete(
-    (document.getElementById('location')),
-    {types: ['geocode']});
+  var input = (document.getElementById('treeLocation'),
+      {types: ['geocode']});
+
+  autocomplete = new google.maps.places.Autocomplete(input);
 }
 
 function geolocate() {

@@ -2,3 +2,6 @@
 .fullnessImg {
   width: 40%;
   max-width: 200px; }
+
+.treeListing p {
+  margin-left: 20px; }

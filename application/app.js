@@ -22,15 +22,11 @@ app.get('/', function (req, res) {
   res.sendFile( __dirname + '/public/html/index.html');
 });
 
-
 app.post('/newTree', function(req, res) {
   console.log('posting a tree');
-  var location = req.body.location;
-  console.log(location);
-
   new Tree({
     treeName: req.body.treeName,
-    location: location,
+    treeLocation: req.body.treeLocation,
     treeFlavor: req.body.treeFlavor,
     treeComment: req.body.treeComment,
     contactName: req.body.contactName,
@@ -47,13 +43,24 @@ app.post('/newTree', function(req, res) {
   });
 });
 
+app.post('/search', jsonParser, function(req, res) {
+    Tree.find(req.body.searchObj, function(err, trees) {
+      if (err) {
+        throw err;
+      }
+      else {
+        res.send(trees);
+      };
+    }).limit(30);
+  });
+
 app.get('/trees', function(req, res) {
-  Post.find(function(err, trees) {
+  Tree.find(function(err, trees) {
     if (err) {
       throw err;
     }
     else {
-      res.send(posts);
+      res.send(trees);
     };
   });
 });
