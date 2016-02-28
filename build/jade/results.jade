@@ -44,10 +44,10 @@ div(ng-repeat="tree in main.treeList")
   div(class="treeListing")
     h4 {{tree.treeName}}
     p
-      a(ng-href="http://maps.google.com/?q={{tree.treeLocation}}") Tree Address: {{tree.treeLocation}}
+      a(target="_blank" ng-href="http://maps.google.com/?q={{tree.treeLocation}}") Tree Address: {{tree.treeLocation}}
     p Tree Type: {{tree.treeFlavor}}
     p How's this tree looking?
-    img(ng-src="../images/{{tree.status}}.jpg")
+    img(ng-src="../images/{{tree.status}}.jpg" class="fullnessImg")
     p Contact Name: {{tree.contactName}}
     p Contact Number: {{tree.contactNumber}}
     p Notes about this Tree: {{tree.treeComment}}

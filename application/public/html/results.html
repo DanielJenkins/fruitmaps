@@ -4,4 +4,4 @@
 <br>
 <br>
 <br>
-<br><h2>search results</h2><a href="/#/tree">A Tree <br></a><a href="/#/tree">A different tree</a><div ng-repeat="tree in main.treeList"><div class="treeListing"><h4>{{tree.treeName}}</h4><p><a ng-href="http://maps.google.com/?q={{tree.treeLocation}}">Tree Address: {{tree.treeLocation}}</a></p><p>Tree Type: {{tree.treeFlavor}}</p><p>How's this tree looking?</p><img ng-src="../images/{{tree.status}}.jpg"/><p>Contact Name: {{tree.contactName}}</p><p>Contact Number: {{tree.contactNumber}}</p><p>Notes about this Tree: {{tree.treeComment}}</p></div></div></div>
+<br><h2>search results</h2><a href="/#/tree">A Tree <br></a><a href="/#/tree">A different tree</a><div ng-repeat="tree in main.treeList"><div class="treeListing"><h4>{{tree.treeName}}</h4><p><a target="_blank" ng-href="http://maps.google.com/?q={{tree.treeLocation}}">Tree Address: {{tree.treeLocation}}</a></p><p>Tree Type: {{tree.treeFlavor}}</p><p>How's this tree looking?</p><img ng-src="../images/{{tree.status}}.jpg" class="fullnessImg"/><p>Contact Name: {{tree.contactName}}</p><p>Contact Number: {{tree.contactNumber}}</p><p>Notes about this Tree: {{tree.treeComment}}</p></div></div></div>
