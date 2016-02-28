@@ -16,3 +16,9 @@
   width: 40%;
   margin-left: 40px;
   max-width: 200px; }
+
+.testblock {
+  width: 200px;
+  height: 200px;
+  margin: 100px;
+  background-color: red; }
